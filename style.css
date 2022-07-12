@@ -1,10 +1,36 @@
 * {
-    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+body {
+    background-color: #1F2937; 
 }
 
 img {
     height: auto;
     width: 85%;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+a:hover {
+    color: #FAF9F8;
+}
+
+p {
+    padding-top: 16px;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    color: #FAF9F8;
+    font-size: 24px;
+    padding-top: 16px;
 }
 
 .container {
@@ -16,23 +42,20 @@ img {
 
 }
 
-.containertwo {
-    display: flex;
-    justify-content: flex-start;
-    color: #FAF9F8;
-    font-size: 24px;
-}
+
 
 .containerthree {
     display: flex;
     justify-content: flex-end;
+    padding-top: 16px;
+    gap: 5px;
     color: #E5E7EB;
     font-size: 18px;
 }
 
 .containerfour {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
 }
 
 .containerfive {
@@ -47,26 +70,31 @@ img {
 
 .containersix {
     display: flex;
+    background-color: #FAF9F8;
     justify-content: space-evenly;
     padding-left: 300px;
     padding-right: 300px;
-    padding-top: 25px;
-
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .graycontainer {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .actionbox {
     display: flex;
-    margin: 48px;
+    min-width: 400px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 400px;
+    margin-right: 400px;
     padding-top: 24px;
     padding-bottom: 24px;
     align-items: center;
@@ -77,6 +105,7 @@ img {
 .headerone {
     color: #FAF9F8;
     font-size: 48px;
+    padding-top: 24px;
 }
 
 .headertwo {
@@ -99,21 +128,20 @@ img {
 .textone {
     color: #E5E7EB;
     font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 30px;
 }
 
-.texttwo {
-    display: flex;
-}
 
 .imageone {
+    padding-top: 38px;
     padding-left: 100px;
-    padding-bottom: 100px;
 }
 
 
 button {
     width: 75px;
-    background-color: #3882F6;
+    background-color: #E5E7EB;
     transition-duration: 0.4s;
     border-radius: 16px;
     font-weight: bold;
@@ -125,9 +153,5 @@ button:hover {
 }
 
 .endbutton {
-    padding-left: 16px;
-}
-
-.headlink {
-    padding: 10px;
+    padding-left: 76px;
 }
