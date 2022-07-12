@@ -9,7 +9,7 @@ body {
 
 img {
     height: auto;
-    width: 85%;
+    max-width: 100%;
 }
 
 a {
@@ -33,20 +33,28 @@ h1 {
     padding-top: 16px;
 }
 
-.container {
+.images {
     display: flex;
-    background-color: #1F2937;
-    padding-left: 200px;
-    padding-right: 200px;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
 
 }
 
+.container {
+    display: flex;
+    background-color: #1F2937;
+    margin: auto;
+    padding-left: 200px;
+    padding-bottom: 84px;
+    justify-content: space-between;
+}
 
 
 .containerthree {
     display: flex;
-    justify-content: flex-end;
+    align-self: center;
+    padding-right: 186px;
     padding-top: 16px;
     gap: 5px;
     color: #E5E7EB;
@@ -60,22 +68,21 @@ h1 {
 
 .containerfive {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
-    margin: 10px;
+    gap: 18px;
+    margin: 24px;
     
 }
 
 .containersix {
     display: flex;
     background-color: #FAF9F8;
+    flex-direction: column;
     justify-content: space-evenly;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-left: 400px;
+    padding-right: 400px;
+
 }
 
 .graycontainer {
@@ -134,15 +141,19 @@ h1 {
 
 
 .imageone {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
     padding-top: 38px;
     padding-left: 100px;
+    padding-right: 186px;
 }
 
 
 button {
     width: 75px;
     background-color: #E5E7EB;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     border-radius: 16px;
     font-weight: bold;
 }
@@ -150,6 +161,11 @@ button {
 button:hover {
     background-color: ghostwhite;
     color: black;
+}
+
+button:active {
+    background-color: black;
+    color: ghostwhite;
 }
 
 .endbutton {
